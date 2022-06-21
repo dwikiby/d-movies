@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9EBC8;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    margin: 0;
+}
+header {
+    background-color: #EEC373;
+    display: flex;
+    justify-content: center;
+
+}
+
+header h1 {
+    color: black;
+}
+
+.search {
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 30px;
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.search::placeholder {
+    color: black;
+}
+
+.search:focus {
+    background-color: #FFF89A;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #EEC373;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 320px;
+    border-style: ridge;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-info {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+   
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: black;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+.overview {
+background-color: black;
+    color: #eee;
+    text-align: justify;
+    padding: 2rem;
+    opacity: 93%;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in;
+    border-radius: 10px;
+}
+
+.overview h3 {
+    margin-top: 0;
+    
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+h2{
+    padding: 0.5rem;
+    margin: 20px;
+}
